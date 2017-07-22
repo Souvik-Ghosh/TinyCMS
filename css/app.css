@@ -1,0 +1,54 @@
+body {
+	font: 1em "Helvetica", sans-serif;
+	background-color: #edeff0;
+	margin: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 20px;
+	width: 100%;
+	max-width: 100%;	
+	background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 200;
+}
+
+input,
+textarea {
+	font-size: inherit;
+}
+
+input[type = "text"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #bbb;
+}
+
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+table {
+	text-align: left;
+}
+
+table th {
+    padding: 40px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+.faded {
+	color: #bbb;
+}
+

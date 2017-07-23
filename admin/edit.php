@@ -30,7 +30,7 @@ if(!empty($_POST)) {
 
 	header('location:' . BASE_URL . '/admin/list.php');
 }
-
+if(!empty($_GET['id'])) {
 $page = $db->prepare("
 	SELECT * 
 	FROM pages 
@@ -39,6 +39,9 @@ $page = $db->prepare("
 
 $page->execute(['id' => $_GET['id']]);
 
-$page = $page->fetch(PDO::FETCH_ASSOC); 
+$page = $page->fetch(PDO::FETCH_ASSOC);
+} else {
+	header('location:' . BASE_URL . '/admin/list.php');
+}
 
 require VIEW_ROOT . '/admin/edit.php';

@@ -1,13 +1,13 @@
 body {
-	font: 1em "Helvetica", sans-serif;
-	background-color: #edeff0;
-	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f4f4f4;
+	margin: auto;
 }
 
 .wrapper {
-	margin: 0 auto;
-	padding: 20px;
-	width: 100%;
+	margin: auto;
+	padding: 5px 30px;
+	width: 80%;
 	max-width: 100%;	
 	background-color: #fff;
 }
@@ -22,33 +22,70 @@ h5 {
 
 input,
 textarea {
-	font-size: inherit;
+	font-size: 14px;
 }
 
 input[type = "text"],
 textarea {
 	width: 100%;
-	padding: 10px;
+	margin: 5px;
+	padding: 5px;
 	box-sizing: border-box;
-	border: 1px solid #bbb;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	outline: none;
+}
+
+input[type=text]:focus, 
+textarea:focus {
+    border: 2px solid #7fc4fa;
 }
 
 label {
 	display: block;
-	margin-bottom: 20px;
 }
 
 table {
-	text-align: left;
+	width: 100%;
 }
 
 table th {
-    padding: 40px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-
+	height: 40px;
+	text-align: left;
 }
+
+table td {
+	vertical-align: center;
+	height: 10px;
+}
+
 .faded {
 	color: #bbb;
 }
 
+a {
+	text-decoration: none;
+}
+
+.link {
+	text-decoration: none;
+	color: white;
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 2px;
+	cursor: pointer;
+}

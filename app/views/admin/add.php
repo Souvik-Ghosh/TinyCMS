@@ -1,6 +1,6 @@
 <?php require VIEW_ROOT . '/templates/header.php'; ?>
 
-<h2>Add Page</h2>
+<h2>Add a new page</h2>
 
 <form action= "<?php echo BASE_URL; ?>/admin/add.php" method="POST" autocomplete ="off">
 	<label for="title">

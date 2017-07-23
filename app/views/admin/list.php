@@ -20,10 +20,9 @@
 				<tr>
 					<td><?php echo esc($page['label']); ?></td>
 					<td><?php echo esc($page['title']); ?></td>
-					<td><a href="<?php echo(BASE_URL); ?>/page.php?page=<?php echo esc($page['slug']); ?>"><?php echo esc($page['slug']); ?></a></td>
-					<td><a href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo esc($page['id']); ?>">Edit</a></td>
-					<td><a href="<?php echo (BASE_URL); ?>/admin/delete.php?id=<?php echo esc($page['id']); ?>">Delete</a></td>
-
+					<td><a target="_blank" href="<?php echo(BASE_URL); ?>/page.php?page=<?php echo esc($page['slug']); ?>"><?php echo esc($page['slug']); ?></a></td>
+					<td><a class="link" href="<?php echo BASE_URL; ?>/admin/edit.php?id=<?php echo esc($page['id']); ?>">Edit</a></td>
+					<td><a class="link" href="<?php echo (BASE_URL); ?>/admin/delete.php?id=<?php echo esc($page['id']); ?>">Delete</a></td>
 				</tr>
 			<?php endforeach; ?>
 			</tbody>
@@ -31,6 +30,6 @@
 		</div>
 	<?php endif; ?>
 
-	<a href="<?php echo BASE_URL; ?>/admin/add.php">Add new page</a>
+<p><a class="link" href="<?php echo BASE_URL; ?>/admin/add.php">Add new page</a></p> 
 
 <?php require VIEW_ROOT . '/templates/footer.php'; ?>
